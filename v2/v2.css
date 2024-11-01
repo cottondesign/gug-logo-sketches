@@ -1,17 +1,34 @@
-.cotton--main-canvas{
+.cotton--canvas-wrapper{
   position: fixed;
   top: 10px;
   right: 10px;
+  /* z-index: 3; */
   mix-blend-mode: lighten;
-  z-index: 3;
   /* outline: 1px solid black; */
 }
 
-#capture {
+.cotton--main-canvas{
+  display: block;
+  /* outline: 1px solid red; */
+}
+
+.cotton--canvas-wrapper:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 75px;
+  background: #E2E2E2;
+  display: block;
+  mix-blend-mode: darken;
+}
+
+#capture{
   position: relative;
 }
 
-.nav {
+.nav{
   width: 100vw;
   height: 95px;
   background: white;
@@ -24,8 +41,7 @@
   position:fixed;
   top:20px;
   right:20px;
-  z-index: 2;
-
+  /* z-index: 2; */
   /* outline: 1px solid black; */
 }
 
@@ -36,7 +52,7 @@
 
 
 
-.test {
+/* .test {
   width: 80vw;
   height: 200px;
   background: red;
@@ -44,4 +60,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */

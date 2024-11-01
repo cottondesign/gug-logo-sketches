@@ -2,14 +2,16 @@ const logoWidth = 75;
 const logoHeight = 75;
 
 // create canvas
+const canvasWrapper = document.querySelector(".cotton--canvas-wrapper");
 const canvas = document.createElement('canvas');
 canvas.classList.add('cotton--main-canvas');
 canvas.width = logoWidth;
 canvas.height = logoHeight;
-document.body.appendChild(canvas);
+canvasWrapper.appendChild(canvas);
+
 
 const ctxMain = canvas.getContext('2d', { willReadFrequently: true });
-ctxMain.filter = 'blur(4px)';
+ctxMain.filter = 'blur(12px)';
 // ctxMain.fillStyle = '#3498db';
 // ctxMain.fillRect(0, 0, canvas.width, canvas.height);
 
