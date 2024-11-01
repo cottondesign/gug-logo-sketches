@@ -1,0 +1,41 @@
+.cotton--logo_container{
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.cotton--logo_inverse{
+    position:relative;
+    display: block;
+}
+
+.cotton--bg_blur{
+    background: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(30px);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:calc(100% - 5px);
+}
+
+
+/* CSS */
+
+:root{
+    --max-width:1280px;
+}
+
+._nav{
+    position: relative;
+    z-index: 700;
+}
+
+._main{
+    position:relative;
+}
+._utility{
+    position: absolute;
+    top: 1.25rem;
+    right: 2rem;
+}
