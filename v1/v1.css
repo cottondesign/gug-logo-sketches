@@ -20,15 +20,14 @@
 }
 
 
-/* CSS */
+/* HELPER CSS */
 
-:root{
-    --max-width:1280px;
-}
 
 ._nav{
     position: relative;
     z-index: 700;
+    max-width: var(--max-width);
+    margin: auto;
 }
 
 ._main{
@@ -39,3 +38,4 @@
     top: 1.25rem;
     right: 2rem;
 }
+

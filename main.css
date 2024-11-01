@@ -1,7 +1,16 @@
+
+:root{
+    --max-width:1280px;
+}
+
 body{
     margin:0;
 }
 
 .scroller{
-    width:100vw;
+    width:100%;
+}
+.page{
+    max-width: var(--max-width);
+    margin: auto;
 }
