@@ -1,21 +1,87 @@
-.cotton--logo_container{
-    position:fixed;
+
+
+.cotton--nav_container{ 
+    --logo-width: 90px;
+    --logo-height: 90px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.cotton--nav_container:before{
+    width: var(--logo-width);
+    height: 5px;
+    position:absolute;
     top:0;
     left:0;
+    background:white;
+    content:'';
+}
+.cotton--nav_container:after{
+    height: var(--logo-width);
+    width: 5px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:white;
+    content:'';
+}
+.cotton--logo_container{
+    position:relative;
+    /* top:0; */
+    /* left:0; */
+    width: var(--logo-width);
 }
 
 .cotton--logo_inverse{
     position:relative;
     display: block;
+    width: var(--logo-width);
+    height: var(--logo-height);
+    object-fit: cover;
 }
 
 .cotton--bg_blur{
     background: rgba(255, 255, 255, 0.28);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(40px);
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
+    top:2px;
+    left:2px;
+    width:calc(100% - 5px);
     height:calc(100% - 5px);
+}
+.cotton--rest_of_nav{
+    --padding: 10px;
+    background:white;
+    width:calc(100% - var(--logo-width) - var(--padding)*2);
+    padding: var(--padding);
+}
+
+
+
+
+/* HELPER CSS */
+#main-nav{
+    width: 100%;
+    position: fixed;
+}
+
+._nav{
+    position:relative;
+    z-index: 700;
+    max-width: var(--max-width);
+    margin: auto;
+    /* background:red; */
+    width:100%;
+    height:13vw;
+    max-height:166.398px;
+}
+
+._main{
+    position:relative;
+}
+._utility{
+    position: absolute;
+    top: 1.25rem;
+    right: 2rem;
 }
 

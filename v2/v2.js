@@ -11,7 +11,7 @@ canvasWrapper.appendChild(canvas);
 
 
 const ctxMain = canvas.getContext('2d', { willReadFrequently: true });
-ctxMain.filter = 'blur(12px)';
+ctxMain.filter = 'blur(15px)';
 // ctxMain.fillStyle = '#3498db';
 // ctxMain.fillRect(0, 0, canvas.width, canvas.height);
 
