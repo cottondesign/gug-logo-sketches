@@ -1,0 +1,47 @@
+.cotton--main-canvas{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  mix-blend-mode: lighten;
+  z-index: 3;
+  /* outline: 1px solid black; */
+}
+
+#capture {
+  position: relative;
+}
+
+._nav {
+  width: 100vw;
+  height: 95px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.cotton--logo_container{
+  position:fixed;
+  top:20px;
+  right:20px;
+  z-index: 2;
+
+  /* outline: 1px solid black; */
+}
+
+.cotton--logo{
+  position:relative;
+  display: block;
+}
+
+
+
+.test {
+  width: 80vw;
+  height: 200px;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
