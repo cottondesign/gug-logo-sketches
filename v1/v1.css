@@ -19,23 +19,3 @@
     height:calc(100% - 5px);
 }
 
-
-/* HELPER CSS */
-
-
-._nav{
-    position: relative;
-    z-index: 700;
-    max-width: var(--max-width);
-    margin: auto;
-}
-
-._main{
-    position:relative;
-}
-._utility{
-    position: absolute;
-    top: 1.25rem;
-    right: 2rem;
-}
-
